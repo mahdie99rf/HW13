@@ -6,6 +6,23 @@ public class Address {
     private String zone;
     private String city;
 
+    @Override
+    public String toString() {
+        return "Address{" +
+                "postalCode='" + postalCode + '\'' +
+                ", street='" + street + '\'' +
+                ", zone='" + zone + '\'' +
+                ", city='" + city + '\'' +
+                '}';
+    }
+
+    public Address(String postalCode, String street, String zone, String city) {
+        this.postalCode = postalCode;
+        this.street = street;
+        this.zone = zone;
+        this.city = city;
+    }
+
     public String getPostalCode() {
         return postalCode;
     }

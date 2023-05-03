@@ -8,6 +8,23 @@ public class Person {
     private String LastName;
     private int age;
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "address=" + address +
+                ", firstName='" + firstName + '\'' +
+                ", LastName='" + LastName + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+    public Person(Address address, String firstName, String lastName, int age) {
+        this.address = address;
+        this.firstName = firstName;
+        LastName = lastName;
+        this.age = age;
+    }
+
     public Address getAddress() {
         return address;
     }
